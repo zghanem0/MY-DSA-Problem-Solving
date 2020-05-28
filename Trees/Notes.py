@@ -8,7 +8,7 @@ you want to store.
 1. General Tree: If no constraint is placed on the hierarchy of the tree, a tree is called
 a general tree. Every node may have infinite numbers of children in General Tree
 
-2. Binary TreeIf no constraint is placed on the hierarchy of the tree, a tree is called a general tree. Every node may
+2. Binary Tree :If no constraint is placed on the hierarchy of the tree, a tree is called a general tree. Every node may
 have infinite numbers of children in General Tree The binary tree is the kind of tree in which most two children can be found for each parent.
 The kids are known as the left kid and right kid
 
@@ -17,12 +17,14 @@ left child value of a node should in BST be less than or equal to the parent val
 always be greater than or equal to the parent’s value. This Binary Search Tree property makes it ideal for search
 operations since we can accurately determine at each node whether the value is in the left or right sub-tree. This is
 why the Search Tree is named.
-
->> what makes trees is efficient: because the order is O(log n)
+    - binary tree and BST aren't efficient because they unbalanced
+>> what makes trees is efficient: because the order is O(log n) if it balanced
 look at that digram below :
 there are 4 levels so the worest case will be only 4 operations :
 if the the node is size is 16 the operations will be 4 that's why, log 16 =4  which log for base 2
 
+    - if the tree balanced means : the letf nearly equal to the right ,the Order will be O(log n), in case of lookup,insert and delete
+    - if the tree unbalanced means : the letf completely not equal to the right, the Order will be O(n), in case of lookup,insert and delete
 
                             2
                            / \
@@ -32,9 +34,7 @@ if the the node is size is 16 the operations will be 4 that's why, log 16 =4  wh
                       0   7   9   1
                      /   / \  / \ / \
                     2   1   0 7  8   8
-
-
-
+                Unbalanced tree ()
 
 4.  AVL Tree AVL tree is a binary search tree self-balancing. On behalf of the inventors Adelson-Velshi and Landis,
 the name AVL is given. This was the first tree that balanced dynamically. A balancing factor is allocated for each
