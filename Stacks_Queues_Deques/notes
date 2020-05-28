@@ -1,0 +1,13 @@
+'''
+the main goals for both is needed for sth such as queueing services  implelement stack in OP or Browsers and many more
+** what is the main difference between stack and queue :
+pop : to use the element that pushed
+push: to add an element
+>> stack : pushing  and pop using lifo mechanism
+>> queue : pushing  and pop using  fifo mechanism  5-4-3-2-1   >>> then when the pop is pull
+
+** how is deque differes from the queues and stacks
+the main difference is : the unrestrictive nature of adding and removing items ,it can be added at either rear or front
+(it's a hyprid linear structure which provides all capabilites of the stacks and queues in the single data structure )
+'''
+

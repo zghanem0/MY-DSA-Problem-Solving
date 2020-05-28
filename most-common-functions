@@ -1,0 +1,28 @@
+************** zip function **************
+Definition and Usage : use it to avoid BigO(n^2) 
+The zip() function returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together,
+and then the second item in each passed iterator are paired together
+
+>> EXAMPLE:
+a = ("John", "Charles", "Mike")
+b = ("Jenny", "Christy", "Monica", "Vicky")
+x = zip(a, b)
+#use the tuple() function to display a readable version of the result:
+print(tuple(x))
+
+>> OUTPUT:
+(('John', 'Jenny'), ('Charles', 'Christy'), ('Mike', 'Monica'))
+*************** mapping functions ****************
+used to mapping func and iterable 
+>> Syntax :
+map(fun, iter)
+>> EXAMPLE : 
+def addition(n): 
+    return n + n 
+    
+numbers = (1, 2, 3, 4) 
+result = map(addition, numbers) 
+print(list(result))
+
+>> OUTPUTS:
+[2, 4, 6, 8]
