@@ -3,6 +3,10 @@ retrieving much more efficient than other data structure methods.A tree is a col
 connected and don't have any cyclic relations as shown in Figure 1. These nodes contain information and are usually
 arranged in a key-value structure. The key serves as an identifier for the data, and value is the actual data that
 you want to store.
+>> Common 3 traverse patterns:
+- preorder
+- inorder
+-postorder
 
 >> common types of tree :
 1. General Tree: If no constraint is placed on the hierarchy of the tree, a tree is called
@@ -46,5 +50,7 @@ and removal take O(log n) time in the AVL tree. It is mostly applied when workin
 5. Red-Black Tree
 Another kind of auto-balancing tree is red-black. The red-black name is given because the Red-black tree has either red or Black painted on each node according to the red-black tree’s properties. It maintains the balance of the forest. Even though this tree is not a fully balanced tree, the searching operation only takes O (log n) time. When the new nodes are added in Red-Black Tree then nodes will be rotated again to maintain the Red-Black Tree’s properties.
 
-
+>> when to use binary Heaps: when we need priorities , may from smaller to larger or vice versa
+ - in case of MIN model : means the smaller number is have a high priority and the tree start from the smaller number
+ - in case of MAX model : means the larger number is have a high priority and the tree start from the larger number
 '''

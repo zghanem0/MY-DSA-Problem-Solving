@@ -10,4 +10,3 @@ push: to add an element
 the main difference is : the unrestrictive nature of adding and removing items ,it can be added at either rear or front
 (it's a hyprid linear structure which provides all capabilites of the stacks and queues in the single data structure )
 '''
-
