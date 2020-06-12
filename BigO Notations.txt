@@ -1,1 +1,3 @@
-** O(log N): happend when u will not have to traverse to the entire N for example BST mechanism if "Blanaced"
+>> any devide and conquer approach using O(log n):
+	- in Binary tree :O(log N): happend when u will not have to traverse to the entire N for example BST mechanism if "Blanaced"
+	- in sorting O(n log n): why?, n : comes from that u must traverse for each element to compare them in order to sort them and (log n ) from spliting the array into binary unites to compare

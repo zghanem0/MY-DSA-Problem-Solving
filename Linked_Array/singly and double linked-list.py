@@ -16,7 +16,7 @@ print(b.N_node.value)
 # ---------------------------------------------------
 #  Doubly linked-list
 class D_Node:
-    def __int__(self, value):
+    def __init__(self, value):
         self.value = value
         self.N_node = None
         self.P_node = None

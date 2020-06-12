@@ -12,42 +12,6 @@ print(fibiter(6))
 
 '''
 
-
-'''
-def fn(n):
-    # single line to find factorial
-    if (n == 1 or n == 0):
-
-        return 1
-    else:
-        S=S+n
-        return n + fn(n - 1)  # >> fn(fn(n) >> fn(n) * fn(fn) which the loop end until {return (n) * } &
-        # the function is fn(n)= n * >>that is the func
-
-# Driver Code
-num = 4
-
-print("sum from 0 to ", num, "is", fn(num))
-'''
-
-# fibonacci recursively
-# -------------- way1 -----------------
-'''
-def fn(n):
-    # single line to find factorial
-    if (n == 1 or n == 0):
-
-        return 1
-    else:
-        print(n)
-        return (n) * fn(n - 1) # >> fn(fn(n) >> fn(n) * fn(fn) which the loop end until {return (n) * } &
-        # the function is fn(n)= n * >>that is the func
-
-
-# Driver Code
-num = 4
-print("Factorial of", num, "is", fn(num))
-'''
 #  *-------------------- way 2  , o(2^n)---------------------*
 '''
 >> if the n=5 

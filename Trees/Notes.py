@@ -12,10 +12,15 @@ you want to store.
 1. General Tree: If no constraint is placed on the hierarchy of the tree, a tree is called
 a general tree. Every node may have infinite numbers of children in General Tree
 
-2. Binary Tree :If no constraint is placed on the hierarchy of the tree, a tree is called a general tree. Every node may
-have infinite numbers of children in General Tree The binary tree is the kind of tree in which most two children can be found for each parent.
-The kids are known as the left kid and right kid
-
+2. Binary Tree(complete tree) :If no constraint is placed on the hierarchy of the tree, a tree is called a general tree.
+ Every node may have infinite numbers of children in General Tree The binary tree is the kind of tree in which most
+ two childrencan be found for each parent. The kids are known as the left kid and right kid
+>> types of binary tree :
+ - Complete Binary Tree: A Binary Tree is complete Binary Tree if all levels are completely filled except possibly the last level
+   and the last level has all keys as left as possible means the tree filled each level from left to right respectively
+ - Perfect Binary Tree: A Binary tree is Perfect Binary Tree in which all internal nodes have two children and all leaves are at the same level.
+ - Balanced Binary Tree: A binary tree is balanced if the height of the tree is O(Log n) where n is the number of nodes
+    such as Balanced Binary Search trees ,AVL Tree
 3. Binary Search Tree Binary Search Tree (BST) is a binary tree extension with several optional restrictions. The
 left child value of a node should in BST be less than or equal to the parent value and the right child value should
 always be greater than or equal to the parent’s value. This Binary Search Tree property makes it ideal for search
@@ -27,8 +32,8 @@ look at that digram below :
 there are 4 levels so the worest case will be only 4 operations :
 if the the node is size is 16 the operations will be 4 that's why, log 16 =4  which log for base 2
 
-    - if the tree balanced means : the letf nearly equal to the right ,the Order will be O(log n), in case of lookup,insert and delete
-    - if the tree unbalanced means : the letf completely not equal to the right, the Order will be O(n), in case of lookup,insert and delete
+    - if the tree balanced means : the left height(levels) nearly equal to the right ,the Order will be O(log n), in case of lookup,insertion and deletion
+    - if the tree unbalanced means : the left height completely not equal to the right, the Order will be O(n), in case of lookup,insertion and deletion
 
                             2
                            / \

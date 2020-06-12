@@ -1,0 +1,9 @@
+>>> binary tree
+	- binary search tree (BST)
+>>> search:
+	- binary search
+	- DFS
+	- BFS
+>>> there are 2 ways of traversing :
+	- using graph traversal : DFS and BFS
+	- using tree traversal : preorder,inorder,postorder

@@ -8,6 +8,13 @@ recursion/venv/*
 recursion/.idea/*
 Stacks_Queues_Deques/venv/*
 Stacks_Queues_Deques/.idea/*
+graphs/venv/*
+graphs/.idea/*
+searching/venv/*
+searching/.idea/*
+sorting/.idea/*
+sorting/venv/*
+Trees/.idea/*
 Trees/venv/*
-Tress/.idea/*
+
 runescape/*
