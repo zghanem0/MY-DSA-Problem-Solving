@@ -1,8 +1,13 @@
-'''What is a Tree? Trees are abstract data structures, used to manage data in a hierarchical way, making data
+'''
+What is a Tree? Trees are abstract data structures, used to manage data in a hierarchical way, making data
 retrieving much more efficient than other data structure methods.A tree is a collection of nodes that are linearly
 connected and don't have any cyclic relations as shown in Figure 1. These nodes contain information and are usually
 arranged in a key-value structure. The key serves as an identifier for the data, and value is the actual data that
 you want to store.
+- Trees are well-known as a non-linear data structure. They don’t store data in a linear way. They organize data hierarchically.
+-
+
+
 >> Common 3 traverse patterns:
 - preorder
 - inorder
@@ -58,4 +63,21 @@ Another kind of auto-balancing tree is red-black. The red-black name is given be
 >> when to use binary Heaps: when we need priorities , may from smaller to larger or vice versa
  - in case of MIN model : means the smaller number is have a high priority and the tree start from the smaller number
  - in case of MAX model : means the larger number is have a high priority and the tree start from the larger number
+
+
+>>> tree Operations :
+    >> The Insertion :
+        #Here’s the code:
+
+        def insert_left(self, value):
+            if self.left_child == None:
+                self.left_child = BinaryTree(value)
+            else:
+                new_node = BinaryTree(value)
+                new_node.left_child = self.left_child
+                self.left_child = new_node
+        Again, if the current node doesn’t have a left child, we just create a new node and set it to the current node’s left_child.
+         Or else we create a new node and put it in the current left child’s place. Allocate this left child node to the new node’s left child.
+
+
 '''

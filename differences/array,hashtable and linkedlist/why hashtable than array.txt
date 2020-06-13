@@ -1,0 +1,1 @@
+read all of here : https://stackoverflow.com/questions/12020984/hash-table-why-is-it-faster-than-arrays
