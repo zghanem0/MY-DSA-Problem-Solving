@@ -221,10 +221,9 @@ class BinarySearchTree:
 
 
 mytree = BinarySearchTree()
-mytree[3] = "red"
-mytree[4] = "blue"
+mytree.put(3,"red")
+mytree[4] = "blue"      # that happened by the  " __setitem__ " method
 mytree[6] = "yellow"
 mytree[2] = "at"
-
 print(mytree[6])
 print(mytree[2])

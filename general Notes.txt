@@ -1,0 +1,6 @@
+- care about if and else and inssist to use else over ont using it,unless may cause problem 
+- when use return and when not in recursion : or use the " print " will fullfil the pupose 
+	- if u will get the value must use return in recursion
+	- if u will put value there is no need to return values!!
+- when recursion over loop:
+	-

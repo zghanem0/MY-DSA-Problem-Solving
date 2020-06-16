@@ -1,0 +1,7 @@
+read all of here : https://stackoverflow.com/questions/12020984/hash-table-why-is-it-faster-than-arrays
+
+A Hash Table will not have to compare every element in the Hash. It will calculate the hashcode according to the key.
+ For example, if the key is 4, then hashcode may be - 4*x*y. Now the pointer knows exactly which element to pick.
+
+Whereas if it has been an array, it will have to traverse through the whole array to search for this element.
+if the element in the array 

@@ -1,0 +1,31 @@
+>>> there are 2 classes :
+    >> Node Class :
+        attributes:
+            - needed attributes : key,value,left,right,parent
+            - expected arguments: values: key,value,parent
+                - for new Node:key,value
+                - in BST : (key,value)
+
+    >> BST Class:
+        - attributes:
+            - needed attributes : root
+>>> the heierachical questions : always must draw 3 lvl to get the fully intuition about the tree process
+    >>> at root level :
+        >>> is root exist or not :
+            >> if not exist :the root will be = the new Node()
+            >> if exist:
+                >> call the private function
+        >>> is the key < currentNode.key:
+    >>> at child lvl :
+        >>> is there left child to the root:
+            >> if exist : do recuresion
+            >> if not : means u arrived to the end of the tree and need to put the or get the item don't missed to (reference to the parent)
+
+    *** Summary ***
+    >>> there the questions:
+        >>> is
+        >> at root level :
+            - is root=None or not(is there root or not)
+            - is the root != key or root == key
+            - is the key < currentNode.key or key > currentNode.key
+            - is there left child in case of key < currentNode.key , is there right child in case of key > currentNode.key

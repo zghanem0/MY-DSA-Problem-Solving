@@ -4,7 +4,11 @@
 >> when the hash table Order becoming O(N): (in case of Collision)
 1- If too many elements were hashed into the same key: looking inside this key may take O(n) time.
 
-2- Once a hash table has passed its load factor  - it has to rehash [create a new bigger table, and re-insert each element to the table].
+2- Once a hash table has exceeds its load factor or called (Load Balance)  - it has to rehash [create a new bigger table, and re-insert each element to the table].
+    Rehashing:
+        As the name suggests, rehashing means hashing again. Basically, when the load factor increases to more than its pre-defined value (default value of load factor is 0.75),
+        the complexity increases. So to overcome this, the size of the array is increased (doubled) and
+        all the values are hashed again and stored in the new double sized array to maintain a low load factor and low complexity.
 
 >>  Collision resolution
 Open hashing (chaining)
