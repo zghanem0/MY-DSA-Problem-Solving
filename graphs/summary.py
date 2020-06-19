@@ -1,15 +1,55 @@
 '''
+
 >>> what is graphs : Graphs can be used to represent many real-world things such as systems of roads, airline flights from city to city,
  how the Internet is connected, etc
     - Graphs are a more general structure than trees we can think of a tree as a special kind of graph.
 >>> Graph types:
-    >> Weighted :
-        - Directed : using bellmanford and dijkstra algorithms
-        - Indirected : using bellmanford and dijkstra algorithms
-    >> Unweighted :
-        - Directed : such as using DFS algorithm
-        - Indirected : such as using BFS algorithms
+    - A Undirected Graph
+    - A Directed Graph
+    - Directed Acyclic Graphs(DAG) - are directed graphs with no directed cycles.
+    - Weighted DAG(directed networks)
+    - Weighted DAG with negative edges
+>>> Each of graph type has a different representation :
+    >> Depth first search (DFS): is an algorithm for traversing or searching tree or graph data structures.
+        > Time Complexity: O(E+V)
+        > Graph type:
+            - Undirected Graph
+            - Directed Acyclic Graphs(DAG) without weigth
+        > Example using:
+            - Weighted Graph
+            - Detecting a Cycle in a Graph:
+            - Path Finding: go from here or there ?!!
+            - Solving Puzzles with Only One Solution:
+            - Searching Strongly Connected Components of a Graph
+    >> Breadth First Search (BFS) : is an algorithm for traversing or searching tree or graph data structures.
+        > Time Complexity: O(E+V)
+        > Graph type:
+            - Undirected Graph
+            - Directed Acyclic Graphs(DAG) without weigth
+        > Example using:
+            - Shortest Path
+            - Copying garbage collection
+            - Serialization
+    >> Dijkstra’s algorithm: for finding shortest Path between nodes in the Graphs
+        > Time Complexity: O(E+V log V)
+        > Graph type:
+            - non-negative weighted DAG
+    >> Bellman–Ford algorithm: computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.
+        > Time Complexity: O(VE)
+        > Graph type:
+            - negative or positive weighted DAG
 
+>>> we can also devide the graph algorithms into 2 categories:
+    >> graph traversal/searching algoritms::
+        - DFS
+        - BFD
+    >> find the Shortest Path algorithms :
+        - dijakstra - non-negative weighted DAG
+        - bellman-ford - negative or positive weighted DAG
+        - BFS : it's  traverse a graph, but It can find the shortest path if the edge weights are unit length.
+
+>>> time Complexty analysis:
+    - BFS,DFS : we go through each vertex in vertlist or graph (V) and go through each vertex's adjecencies (E) >> the edges that connect from the node to each adjecency
 >>>Graphs Termenologies :
     - A vertex :(also called a “node”) is a fundamental part of a graph.
     - payload : A vertex may also have additional information. We will call this additional information the “payload.”
@@ -31,12 +71,13 @@
     - Path :The path from V3 to V1 is the sequence of vertices (V3,V4,V0,V1)
     - graph :
     - directed graph :
+    - Undirected graph : the graph which each 2 nodes aims to each other or point to each other
     - A cycle in a directed graph : is a path that starts and ends at the same vertex. EX : (V5,V2,V3,V5) 
     - acyclic graph : A graph with no cycles
     - Directed Acyclic Graph (DAG): A directed graph with no cycles
 
 >>> there are 2 impelementations of Graphs : (how to represent graphs)
-    >> Adjecency Matrix : One of the easiest ways to implement a graph is to use a two-dimensional matrix.
+    >> Adjecency Matrix : One of the easiest ways to implement a graph is to use a two-dimensional matrix. (Not Used)
         > Charactersirtics :
             - The advantage of the adjacency matrix is that it is simple, and for small graphs it is easy to see which nodes are connected to other nodes.
             - that most of the cells in the matrix are empty so it's called “sparse.”
@@ -63,6 +104,13 @@
         - can't accomodate the negative weights
         - but faster than bellan-ford algo
 
+>> the difference between Bellman–Ford algorithm and Dijkstra’s algorithm
+    Bellman-Ford similar to Dijstra’s except that instead of utilizing a Priority Queue to visit nodes in order,
+    Bellman-Ford looping iterates over every edge V times each, ensuring that all negative edge weights.
+
+>>> why DFS Goes Deep and BFS Goes wide ?
+    is it because of the nature of the queues and stacks and hows we insert and pops a nodes/vertises from a stacks or queues
+>>>DFS : topological sort :
 
 
 

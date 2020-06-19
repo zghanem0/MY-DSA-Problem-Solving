@@ -1,0 +1,2 @@
+If you need data that can be quickly inserted and deleted into and is accessed mostly in sequential order, use a linked list.
+ If you need a fast traversal then a hash table with a good hash function will be a better choice.
