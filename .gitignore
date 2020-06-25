@@ -1,3 +1,5 @@
+Trees/venv/*
+Trees/.idea/*
 Array/venv/*
 Array/.idea/*
 hashTables/venv/*
@@ -14,7 +16,12 @@ searching/venv/*
 searching/.idea/*
 sorting/.idea/*
 sorting/venv/*
-Trees/.idea/*
-Trees/venv/*
+String Manipulation/.idea/*
+String Manipulation/venv/*
+Dynamic Programming/.idea/*
+Dynamic Programming/venv/*
+
+
+
 test/*
 runescape/*

@@ -1,0 +1,10 @@
+>>> there are 2 classes :
+    >> Node Class :
+        attributes:
+            - needed attributes __init__ : self.key,value,nxt,prev
+            - expected arguments: values: key,value
+                - for new Node:key,value
+
+    >> LinkedList Class:
+        - attributes:
+            - needed attributes __init__ : self.head

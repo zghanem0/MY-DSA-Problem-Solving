@@ -1,0 +1,1 @@
+just get the way to put and get the computation results into the cache :the cache may be hash or just array
