@@ -22,6 +22,7 @@ Dynamic Programming/.idea/*
 Dynamic Programming/venv/*
 
 
-
+/.metadata/*
 test/*
 runescape/*
+/.metadata/
