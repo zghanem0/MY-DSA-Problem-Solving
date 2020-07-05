@@ -8,7 +8,7 @@
 
 >>> there are 2 ways of traversing :
 	- using graph traversal : DFS and BFS
-	- using tree traversal : preorder,inorder,postorder
+	- using tree traversal by using the DFS travarsal : preorder,inorder,postorder
 
 >>> when use DFS and BFS:
 That heavily depends on the structure of the search tree and the number and location of solutions (aka searched-for items).

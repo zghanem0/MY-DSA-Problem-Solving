@@ -64,6 +64,17 @@ Another kind of auto-balancing tree is red-black. The red-black name is given be
  - in case of MIN model : means the smaller number is have a high priority and the tree start from the smaller number
  - in case of MAX model : means the larger number is have a high priority and the tree start from the larger number
 
+>> the difference between the AVL and Red Black Tree
+    AVL:
+
+        are more strict in terms of balance: the heights of the two child subtrees of any node differ by at most 1 (one)
+        so it does more CPU instructions per operation (insert/delete) at average
+        so AVL faster for lookup operations because they are more strictly balanced
+    Red-Black:
+
+        less balanced. Does less CPU inscructions per insert/delete operation: so faster for modifying operations
+        keep more data (require 1 additional bit in every node)
+        slower for lookup operations
 
 >>> tree Operations :
     >> The Insertion :

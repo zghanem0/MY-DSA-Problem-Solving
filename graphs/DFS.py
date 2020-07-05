@@ -113,7 +113,7 @@ x = Vertex('a')
 #print(g.vertList['a'])
 #print(g.DFS('a'))
 
-# ********************** Solution 3 (is more simple and best **********************
+# ********************** Solution 3 (is more simple and best ) **********************
 '''
 print(g.getVertices())
 for vertex in g:
