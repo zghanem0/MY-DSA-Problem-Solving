@@ -114,8 +114,12 @@
 
 
 
-
-
-
+>>> **** there is a difference between DFS,BFS in Binary Tree and Using BFS,DFS in Graphs ****
+  A Tree is typically traversed in two ways:
+- Breadth First Traversal (Or Level Order Traversal)
+- Depth First Traversals
+    Inorder Traversal (Left-Root-Right)
+    Preorder Traversal (Root-Left-Right)
+    Postorder Traversal (Left-Right-Root)
 
 '''

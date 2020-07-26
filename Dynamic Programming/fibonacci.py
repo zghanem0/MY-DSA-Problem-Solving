@@ -1,6 +1,6 @@
 # ---------------- way 1 (iteratively ) (The Best) ------------------
 # Time Complexity is O(n) and Space Complexity is O(1) >>> So (it is the best )
-'''
+
 def fibiter(n):
     first = 0
     sec = 1
@@ -13,7 +13,7 @@ def fibiter(n):
 
 print(fibiter(6))
 
-'''
+
 # --------------- (Dynamic programming ) using memoization technique O(n) ----------------------------
 # Time Complexity is O(n) and Space Complexity is O(N)
 
