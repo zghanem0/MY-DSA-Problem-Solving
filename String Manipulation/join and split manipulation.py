@@ -28,7 +28,7 @@ def string_split_ex(unsplit):
     # Bonus points for using splitlines() here instead,
     # which will be more readable
     for line in unsplit.split('\n')[1:]:
-        results.append(line.split(',', maxsplit=2))
+        results.append(line.split(',', maxsplit=2)) # if maxsplit=2 means split the first 2 then aggregate the rest in the third field
 
     return results
 
