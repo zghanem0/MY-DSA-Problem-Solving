@@ -5,5 +5,5 @@
 	- DFS
 	- BFS
 >>> there are 2 ways of traversing :
-	- using graph traversal : DFS and BFS
-	- using tree traversal : preorder,inorder,postorder
+	- in graph traversal : DFS and BFS
+	- inusing tree traversal : preorder,inorder,postorder
