@@ -34,7 +34,11 @@ def string_split_ex(unsplit):
     return results
 
 print(string_split_ex(input_string))
-# -------------------------------------------------------------------------------------------------------
+
+
+# --------------------------------------------------  JOIN    -----------------------------------------------------
+
+# u can join iterable but should every element inside the iterable should be string 
 '''
 # Question
 Using our web scraping tutorial, you’ve built a great weather scraper. However, it loads string information in a list of lists, each holding a unique row of information you want to write out to a CSV file:
@@ -65,6 +69,6 @@ input_list = [
 # here i want u to put an ','  between every element in that iterable (row)
 joined = [','.join(row) for row in input_list] # for every row, that is a complicated way of [row for row in input_list]
 output = '\n'.join(joined)
-
+# output = ",".join(templist).replace(",","\n")  # this also the same above command 
 print(output)
 
