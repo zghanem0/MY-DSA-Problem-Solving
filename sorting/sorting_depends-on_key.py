@@ -56,3 +56,23 @@ cars = [
 cars.sort(reverse=True,key=lambda x: x[1])
 
 print(cars)
+
+
+# -------------------------- sorting each letter in the word and then sorting the words it's self to get similar items nearest to each other -----------------
+words=["ghanem","haedm","aenhgm","ahmed","ahmedghanem"]
+# first step sorting them : sorted_words=[sorted(i) for i in words]
+# then join them because sorting spliting each char seperatly to sort them
+sorted_words=["".join(sorted(i)) for i in words]
+# then sorting the words will if found 2 words identicals will campare ach other it means will have to go deeper in  sorting to letter level not just the words 
+print(sorted(sorted_words))
+
+# -----------------------------------------------
+#sorting list againest/depends on other list
+
+words=["ghanem","haedm","aenhgm","ahmed","ahmedghanem"]
+# first step sorting them : sorted_words=[sorted(i) for i in words]
+# then join them because sorting spliting each char seperatly to sort them
+sorted_words=["".join(sorted(i)) for i in words]
+num_list=[0,1,2,3,4]
+num_list.sort(key=lambda x: sorted_words[x])
+print(num_list)
