@@ -16,7 +16,6 @@ print ("The reversed string(using loops) is : ",end="")
 print (reverse(s))
 '''
 
-
 # Note
 # he used s[0] for the base case to getout from the recursive loop
 
