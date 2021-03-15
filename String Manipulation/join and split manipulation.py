@@ -72,3 +72,27 @@ output = '\n'.join(joined)
 # output = ",".join(templist).replace(",","\n")  # this also the same above command 
 print(output)
 
+
+
+# ------------------ strip() -------------------------------------
+# Remove spaces at the beginning and at the end of the string:
+
+txt = "     banana      "
+x = txt.strip()
+print(f"of all fruits{x}is my favorite")
+
+# if u will split strings it's better to use strip() before it every time will better 
+foo = "this is \na multi-line string."
+foo = foo.splitlines()
+for i in foo:
+    print(i.strip().split())
+
+
+
+
+
+
+
+
+
+
