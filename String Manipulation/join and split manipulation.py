@@ -74,7 +74,7 @@ print(output)
 
 
 
-# ------------------ strip() -------------------------------------
+# ----------------------------------- strip() -------------------------------------
 # Remove spaces at the beginning and at the end of the string:
 
 txt = "     banana      "
@@ -88,11 +88,38 @@ for i in foo:
     print(i.strip().split())
 
 
+# ---- good example ----------
+def solution(S):
+    images = 0
+    music = 0
+    movies = 0
+    other = 0
+    splited_string=S.splitlines()
+#    strings=iter(S.splitlines())
+    for line in splited_string:
+        fields = line.strip().split()
+        #    fields = line.split('\t')    # Array indices start at 0 unlike AWK
+
+        if fields[0].endswith('.mp3') or fields[0].endswith('.aac') or fields[0].endswith('.flac'):
+            temp_field = fields[1]
+            size = int(temp_field[:-1])
+            music += size
+        elif fields[0].endswith('.jpg') or fields[0].endswith('.bmp') or fields[0].endswith('.gif'):
+            temp_field = fields[1]
+            size = int(temp_field[:-1])
+            images += size
+        elif fields[0].endswith('.mp4') or fields[0].endswith('.avi') or fields[0].endswith('.mkv'):
+            temp_field = fields[1]
+            size = int(temp_field[:-1])
+            movies += size
+        else:
+            temp_field = fields[1]
+            size = int(temp_field[:-1])
+            other += size
+
+    string = (f"music {music}b\nimages {images}b\nmovies {movies}b\nothers {other}b\n")
+    return string
 
 
-
-
-
-
-
-
+string="my.song.mp3 11b\ngreatSong.flac 1000b\nnot3.txt 5b\nvideo.mp4 200b\ngame.exe 100b\nmov!e.mkv 10000b"
+print(solution(S=string))
