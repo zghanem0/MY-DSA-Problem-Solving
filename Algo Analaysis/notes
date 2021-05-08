@@ -1,1 +1,3 @@
-- in dict and set is o(1)
+- in in dict and set is o(1)
+    for i in A:
+        if i in dic:
