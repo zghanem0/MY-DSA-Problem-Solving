@@ -1,8 +1,13 @@
-- in in dict and set is o(1)
+>> in in dict and set is o(1)
     for i in A:
         if i in dic:
 
-- the time complexity of common bruteforce techniques is O(nm), which n the length of string/elements that i want to search for, m the entire string/elements
+>> the time complexity of common bruteforce techniques is O(nm), which n the length of string/elements that i want to search for, m the entire string/elements
 - sometimes also be O(n^2)
 O(m*n) refers to the runnning time of the boyer-moore-horspool Algorithm, which finds all the occurrences of a substring in a string.
  Python's str.find Method finds only one occurrence of the substring, so it's (str.find) will depend on the position of the first occurrence of substring.
+
+>> quadrtic vs cubic :
+in maximum subarray algorithm u may think your using the quadrtic but in the fact your using qubic to make your algo is quadrtic u should do the following:
+to calc the maximum slice, instead back to the first and calc  them and u already did that, so use the previouse result instead of go from the first element to get quadrtic,
+if u back to the first element u algo will gonna be a cubic 
