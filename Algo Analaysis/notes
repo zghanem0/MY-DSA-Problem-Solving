@@ -8,6 +8,6 @@ O(m*n) refers to the runnning time of the boyer-moore-horspool Algorithm, which 
  Python's str.find Method finds only one occurrence of the substring, so it's (str.find) will depend on the position of the first occurrence of substring.
 
 >> quadrtic vs cubic :
-in maximum subarray algorithm u may think your using the quadrtic but in the fact your using qubic to make your algo is quadrtic u should do the following:
+in maximum subarray algorithm u may think you're using a quadrtic but in the fact your are using qubic to make your algo is quadrtic u should do the following:
 to calc the maximum slice, instead back to the first and calc  them and u already did that, so use the previouse result instead of go from the first element to get quadrtic,
 if u back to the first element u algo will gonna be a cubic 
