@@ -1,3 +1,7 @@
 - in in dict and set is o(1)
     for i in A:
         if i in dic:
+
+- the time complexity of common brute force techniques is O(nm), which n the length of string/elements that i want to search for, m the entire string/elements
+O(m*n) refers to the runnning time of the boyer-moore-horspool Algorithm, which finds all the occurrences of a substring in a string.
+ Python's str.find Method finds only one occurrence of the substring, so it's (str.find) will depend on the position of the first occurrence of substring.
