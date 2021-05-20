@@ -1,5 +1,6 @@
 '''
-object is an instance of a class
+>> object is an instance of a class,  An instance of a class is traditionally known as an object, so object==instance==class instance
+
 >> there are to 2 types of attributtes:
   - class attribute (shared) : which is used inside the class and every object as well
   - instance attribute (instance-specific): so differs from instance orjects to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
