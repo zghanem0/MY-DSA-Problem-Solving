@@ -1,6 +1,13 @@
 '''
 >> object is an instance of a class,  An instance of a class is traditionally known as an object, so object==instance==class instance
 
+>>> OOP Compound from 4 terms:
+- encapsulation : is a way to encapsulate or hide your attributes and methods from accessing from the out side for reliability and security puposes and instead using stters and getters to set and get values
+- 
+
+
+
+
 >> there are to 2 types of attributtes:
   - class attribute (shared) : which is used inside the class and every object as well
   - instance attribute (instance-specific): so differs from instance orjects to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
