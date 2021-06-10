@@ -1,0 +1,13 @@
+# https://afteracademy.com/blog/priority-queues
+>>> Priority Queues are the extension of the queues with the following properties:
+- Each element inserted in the Priority Queue has some priority.
+- The element which has higher priority is dequeued first than the element having the low priority.
+- If the two elements having the same priority, then the element which entered the priority queue first will get dequeued first.
+
+Functionality
+Priority Queue supports the following functionality
+
+Enqueue() - Inserting the new element in the Priority Queue.
+Dequeue() - Deleting the maximum priority element from the Priority Queue.
+top() - Returning the maximum priority element in the Priority Queue.
+
