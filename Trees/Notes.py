@@ -5,7 +5,7 @@ connected and don't have any cyclic relations as shown in Figure 1. These nodes 
 arranged in a key-value structure. The key serves as an identifier for the data, and value is the actual data that
 you want to store.
 - Trees are well-known as a non-linear data structure. They don’t store data in a linear way. They organize data hierarchically.
--
+- stack: push/ed and pop/ed , queue: Enqueu/ed,Dequeu/ed
 
 
 >> Common 3 traverse patterns:
