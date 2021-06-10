@@ -48,6 +48,14 @@
         - bellman-ford - negative or positive weighted DAG
         - BFS : it's  traverse a graph, but It can find the shortest path if the edge weights are unit length.
 
+
+>>> dijakstra vs BFS ?  
+- Breadth-first search is just Dijkstra's algorithm with all edge weights equal to 1.
+- Dijkstra's algorithm is conceptually breadth-first search that respects edge costs.
+- The process for exploring the graph is structurally the same in both cases.
+
+
+
 >>> time Complexty analysis:
     - BFS,DFS : we go through each vertex in vertlist or graph (V) and go through each vertex's adjecencies (E) >> the edges that connect from the node to each adjecency
 >>>Graphs Termenologies :
