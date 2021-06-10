@@ -1,1 +1,2 @@
-just get the way to put and get the computation results into the cache :the cache may be hash or just array
+- just get the way to put and get the computation results into the cache :the cache may be hash or just array
+- there are 2 types of stacks: either using my own stack, or call stack (return function_name) again
