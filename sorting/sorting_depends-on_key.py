@@ -58,6 +58,52 @@ cars.sort(reverse=True,key=lambda x: x[1])
 print(cars)
 
 
+############################### The Most Interesting Example ############################
+
+# sorting using custom key
+employees = [
+    {'Name': 'Ahmed Ghanem', 'age': 25, 'salary': 10000},
+    {'Name': 'El-Sayed Ghanem', 'age': 30, 'salary': 8000},
+    {'Name': 'khaled samer', 'age': 18, 'salary': 10000},
+    {'Name': 'mohammed', 'age': 40, 'salary': 15000},
+]
+
+# custom functions to get employee info
+def get_name(employee):
+    return employee["Name"]
+
+
+def get_age(employee):
+    return (employee["age"],employee["salary"])   # to sorting debends on 2 factors if the age are the same will look at the salary
+
+
+def get_salary(employee):
+    return employee["salary"]
+
+
+# sort by name (Ascending order)
+employees.sort(key=get_name)
+print(employees, end='\n\n')
+
+# sort by Age (Ascending order)
+employees.sort(key=get_age)  
+print(employees, end='\n\n', reverse=True)
+
+employees.sort(key=lambda employee: (employee["salary"],employee["age"]))  # here soring using saray if multiple employee has the same slalary  can be sorted by age
+# sort by salary (Descending order)
+print(employees, end='\n\n')
+
+'''
+>>> there are 2 way to sorting using the key :
+1- your own custom function
+2- lambda function:
+>>> u can sorting against multiple factor, so the function should return 2 things or more: return (employee["age"],employee["salary"])
+ - in case of lambda (prefered): employees.sort(key=lambda employee: (employee["salary"],employee["age"]))
+ - in case of custome function:                               return (employee["age"],employee["salary"])
+
+'''
+
+
 # -------------------------- sorting each letter in the word and then sorting the words it's self to get similar items nearest to each other -----------------
 words=["ghanem","haedm","aenhgm","ahmed","ahmedghanem"]
 # first step sorting them : sorted_words=[sorted(i) for i in words]
