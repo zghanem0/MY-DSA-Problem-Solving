@@ -12,6 +12,7 @@ print(tuple(x))
 
 >> OUTPUT:
 (('John', 'Jenny'), ('Charles', 'Christy'), ('Mike', 'Monica'))
+
 *************** mapping functions ****************
 used to mapping func and iterable 
 >> Syntax :
@@ -26,3 +27,7 @@ print(list(result))
 
 >> OUTPUTS:
 [2, 4, 6, 8]
+
+
+####################### Lambda Function ###########################
+>> Syntax : lambda p1, p2: expression 
