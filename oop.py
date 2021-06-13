@@ -2,8 +2,8 @@
 >> object is an instance of a class,  An instance of a class is traditionally known as an object, so object==instance==class instance
 
 >>> OOP Compound from 4 terms:
-- encapsulation : is a way to encapsulate or hide your attributes and methods from accessing from the out side for simplicity and security puposes and instead using stters and getters to set and get values
-- abstraction: shows only useful data by providing the most necessary details, example, expose x,y so u will not have to know about what will gonna happen and the implementations
+- encapsulation (hide code): is a way to encapsulate or hide your attributes and methods from accessing from the out side for  security puposes and instead using stters and getters to set and get values
+- abstraction (hide impelementations): shows only useful data by providing the most necessary details, example, expose x,y so u will not have to know about what will gonna happen and the implementations
 - Polymorphism(poly + morphism): i can do single action (do sth) in a different ways, so we can implement it either by overriding the method (overriding) or creating multiple form of the method(overloading)
   - overloading : allows the object to decide which form of the function to implement at compile-time (overloading) as well as run-time (overriding).
   - overriding: the class is the same but i just need a change for a little methods
