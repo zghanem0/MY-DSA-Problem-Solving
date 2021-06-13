@@ -11,6 +11,9 @@
 Encapsulation:-- Information hiding.
 Abstraction:-- Implementation hiding.
 
+>>> diff between Compile time and runtime?
+- Compile time refers to the time duration in which the programming code is (compiled) or converted to the machine code
+- Run-time: the time period in which a user is running your piece of software. and start after the code has compiled
 
 
 >> there are to 2 types of attributtes:
