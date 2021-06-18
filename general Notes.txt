@@ -1,6 +1,8 @@
-- care about if and else and inssist to use else over ont using it,unless may cause problem 
+- care about if and else and insist to use else over ont using it,unless may cause problem 
 - when use return and when not in recursion : or use the " print " will fullfil the pupose 
 	- if u will get the value must use return in recursion
 	- if u will put value there is no need to return values!!
+- in recursion it is prefere to use "if current" rather than "if current.next"  
+
 - when recursion over loop:
 	-
