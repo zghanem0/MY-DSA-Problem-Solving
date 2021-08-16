@@ -1,6 +1,6 @@
 ################## Set ##################
-  a set itself is mutable. We can add or remove items from it.
-
+- I can take advantages of all dictionary operation's time complexity using set without forcing me to put values to the key or using the key value manner, will use only values
+- a set itself is mutable. We can add or remove items from it.
 Sets can also be used to perform mathematical set operations like union, intersection, symmetric difference, etc.
 
 
