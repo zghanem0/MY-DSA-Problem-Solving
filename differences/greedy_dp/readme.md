@@ -5,3 +5,8 @@
 - greedy is alittle bit diff, instead of move through each element, it will find the most optimum solution using by your intuation (that is why is called greedy)
 https://stackoverflow.com/questions/16690249/what-is-the-difference-between-dynamic-programming-and-greedy-approach/31514882
 ```
+```
+# Greedy algo characterstics:
+- heuristic : works in some cases and some doesn't 
+
+```
