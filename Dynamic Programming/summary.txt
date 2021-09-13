@@ -36,3 +36,9 @@ Tabulation is more straightforward, but may compute unnecessary values. If you 
 # When dp over memoiztion, when dp is must :
 sometimes the search space is very very large 1000000000000, so it is not logic to store all the n of element so u need to not store the elements of make your space complexty is O(N) such as what memoaization do in most(all) cases. 
 here is the dp come the dp will going to theough the element without storing them, just will solve the smaller sub-problems first and then using it during the execution of bigger problem. 
+
+
+# Dynamic Programming generally come in one of these 3 categories :
+1- minizatation
+2- maximization
+3- counting
