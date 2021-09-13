@@ -42,3 +42,7 @@ here is the dp come the dp will going to theough the element without storing the
 1- minizatation
 2- maximization
 3- counting
+
+
+# dp styles:
+1- subset style : pick or leave
