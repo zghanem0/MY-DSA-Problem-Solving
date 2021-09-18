@@ -12,3 +12,17 @@ in maximum subarray algorithm u may think you're using a quadrtic but in the fac
 to calc the maximum slice, instead of back to the first element and calc them and u already did that before , 
 so  u can use the previouse result instead of go from the first element ,
 if u back to the first element u algo will gonna be a cubic 
+
+
+>>> Below are some common Big-O functions while analyzing algorithms.
+
+O(1) - constant time
+O(log(n)) - logarithmic time
+O((log(n))c) - polylogarithmic time
+O(n) - linear time
+O(n2) - quadratic time
+O(nc) - polynomial time
+O(cn) - exponential time
+O(n!) - factorial time
+(n = size of input, c = some constant)
+
