@@ -46,3 +46,8 @@ here is the dp come the dp will going to theough the element without storing the
 
 # dp styles:
 1- subset style : pick or leave
+
+
+
+# Resources
+https://www.youtube.com/watch?v=oBt53YbR9Kk
