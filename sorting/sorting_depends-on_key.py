@@ -112,6 +112,18 @@ sorted_words=["".join(sorted(i)) for i in words]
 # then sorting the words will if found 2 words identicals will campare ach other it means will have to go deeper in  sorting to letter level not just the words 
 print(sorted(sorted_words))
 
+# ---------- sort sting depends on key ----------------
+logs="""ahmed=10
+ghanem=15
+ayman=25
+abd=20
+ghanem=15
+ayman=25"""
+sorted_list=[i.split('=') for i in logs.splitlines()]
+sorted_list.sort(key=lambda x:x[1],reverse=True)
+print(sorted_list)
+
+
 # -----------------------------------------------
 #sorting list againest/depends on other list
 
@@ -122,3 +134,4 @@ sorted_words=["".join(sorted(i)) for i in words]
 num_list=[0,1,2,3,4]
 num_list.sort(key=lambda x: sorted_words[x])
 print(num_list)
+
