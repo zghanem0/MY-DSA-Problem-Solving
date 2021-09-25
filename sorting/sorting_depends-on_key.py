@@ -113,16 +113,17 @@ sorted_words=["".join(sorted(i)) for i in words]
 print(sorted(sorted_words))
 
 # ---------- sort sting depends on key ----------------
-logs="""ahmed=10
+logs = """ahmed=10
 ghanem=15
 ayman=25
 abd=20
 ghanem=15
 ayman=25"""
-sorted_list=[i.split('=') for i in logs.splitlines()]
-sorted_list.sort(key=lambda x:x[1],reverse=True)
+sorted_list = [tuple(i.split('=')) for i in logs.splitlines()]
+sorted_list.sort(key=lambda x: x[1], reverse=True)
+seen = []
 print(sorted_list)
-
+print([i for i in sorted_list if i not in seen  and not seen.append(i)])
 
 # -----------------------------------------------
 #sorting list againest/depends on other list
