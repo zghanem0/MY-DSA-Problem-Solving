@@ -1,0 +1,34 @@
+### Options and Head
+
+OPTIONS method returns info about API (methods/content type)
+HEAD method returns info about resource (version/length/type)
+
+OPTIONS
+```
+HTTP/1.1 200 OK
+Allow: GET,HEAD,POST,OPTIONS,TRACE
+Content-Type: text/html; charset=UTF-8
+Date: Wed, 08 May 2013 10:24:43 GMT
+Content-Length: 0
+```
+
+HEAD
+```
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/html; charset=UTF-8
+Date: Wed, 08 May 2013 10:12:29 GMT
+ETag: "780602-4f6-4db31b2978ec0"
+Last-Modified: Thu, 25 Apr 2013 16:13:23 GMT
+Content-Length: 1270
+```
+OPTIONS: Identifying which HTTP methods a resource supports, e.g. can we DELETE it or update it via a PUT?
+HEAD: Checking whether a resource has changed. This is useful when maintaining a cached version of a resource
+HEAD: Retrieving metadata about the resource, e.g. its media type or its size, before making a possibly costly retrieval
+HEAD, OPTIONS: Testing whether a resource exists and is accessible. For example, validating user-submitted links in an application
+
+
+
+#### post and put
+- put,get,head : idempotent
+- post : non-idempotent
