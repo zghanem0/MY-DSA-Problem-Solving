@@ -30,5 +30,5 @@ HEAD, OPTIONS: Testing whether a resource exists and is accessible. For example,
 
 
 #### post and put
-- put,get,head : idempotent
+- put,delete,get,head : idempotent
 - post : non-idempotent
