@@ -125,6 +125,10 @@ seen = []
 print(sorted_list)
 print("\n".join(['='.join(i) for i in sorted_list if i not in seen  and not seen.append(i)]))
 
+
+# using the tuple 
+
+
 # -----------------------------------------------
 #sorting list againest/depends on other list
 
