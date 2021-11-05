@@ -123,7 +123,7 @@ sorted_list = [tuple(i.split('=')) for i in logs.splitlines()]
 sorted_list.sort(key=lambda x: x[1], reverse=True)
 seen = []
 print(sorted_list)
-print(['='.join(i) for i in sorted_list if i not in seen  and not seen.append(i)])
+print("\n".join(['='.join(i) for i in sorted_list if i not in seen  and not seen.append(i)]))
 
 # -----------------------------------------------
 #sorting list againest/depends on other list
