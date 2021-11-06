@@ -119,16 +119,18 @@ ayman=25
 abd=20
 ghanem=15
 ayman=25"""
-sorted_list = [tuple(i.split('=')) for i in logs.splitlines()]
-sorted_list.sort(key=lambda x: x[1], reverse=True)
 seen = []
-print(sorted_list)
-#               [will do it                       if all of the rest became true otherwise will noting will be applied]
-print("\n".join(['='.join(i) for i in sorted_list if i not in seen  and not seen.append(i)]))
+# 1- split and remove the duplicate lines  
+#             [will do it                              if all of the rest became true otherwise will noting will be applied]
+sorted_list = [i.split('=') for i in logs.splitlines() if i not in seen and not seen.append(i)]
 # what about the "not" here ?
 # actually come to just do sth if the previous conditions are true, for ex: if true do(and not)  this(seen.append(i))
 
 
+# 2- then sort them depends of key 
+sorted_list.sort(key=lambda x: x[1], reverse=True)
+# 3- then join 
+print("\n".join(['='.join(i) for i in sorted_list ]))
 
 
 # using the tuple 
