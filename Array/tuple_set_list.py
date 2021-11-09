@@ -85,3 +85,41 @@ graphicDesigner.remove('Illustrator')
 >> union()	Return a set containing the union of sets
 ```
 >> update()	Update the set with the union of this set and others
+
+
+
+
+
+
+
+
+
+#############################################
+>>> list vs tuple vs set vs dictionary:
+> ordered vs unordered :
+- ordered means: each element in this data structure like tuple and list has information about his order so u can return/get 3rd element and so on , 
+   - note: tuple is ordered but immutable u just can extend means will create new one
+   - note: dictionary can be converted only into list of tuples. 
+
+- unorderd : like hashtable and set, data structure doesn’t have a specific order, and doesn’t care about any ordering 
+
+> mutability :
+- tuple the same as the list in most of things except syntax and mutability, the tuple is an immutable
+
+> preformance : tuple is better
+https://www.educative.io/edpresso/tuples-vs-list-in-python
+
+
+>>> how is hashtable working : the key passed through a hashing algorithm this hash value works as a pointer to it's coroponding value
+- - the keys or index values for a dictionary are passed through a complicated “hash function” which assigns them to unique buckets in memory. 
+
+>>> why list consume more memory than tuple: - https://www.upgrad.com/blog/list-vs-tuple/, why list taking more memory thand the tuble and how is the both working
+
+- because of dynamic memory allocation feature
+- The size of the tuple is prefixed, i.e. at tuple initialization the interpreter allocates enough space for the contained data and hence it's immutable (can't be modified). Whereas a list is a mutable object, hence implying dynamic allocation of memory, so to avoid allocating space each time you append or modify the list (allocate enough space to contain the changed data and copy the data to it), it allocates additional space for future runtime changes, like appends and modifications should be o(n) but it is not is O(n), because of the plenty of the space that is allocated to the list  
+
+- Tuple has a small memory.	List has a large memory.:
+
+- Tuple is stored in a single block of memory.	List is stored in two blocks of memory (One is fixed sized and the other is variable sized for storing data)
+
+- lists are variable-sized if the object-size = 3, the allocated size will be more than it , while tuples are fixed-size. if 3 the allocation will be 3
