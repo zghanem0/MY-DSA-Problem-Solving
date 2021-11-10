@@ -7,6 +7,7 @@
         - selection sort: for Education
         - merge sort: Devide and Conquer Techniqe
         - quick sort: pivoting , Devide and Conquer Techniqes
+        - timsort: python using timesort as a build-in sort algorithm
 ! can we beat the O(n^2)?? yes there are Non-Comparison Sort but working only with numbers specifically integers type only
     - Non-Comparison Sort: O(n log n)
         - Counting Sort
@@ -20,6 +21,7 @@
     - Non-Comparison Sort: working only with numbers specifically integers type only
         - Counting Sort :
         - Radix Sort :
+        - timsort: python using timesort as a build-in sort algorithm
 
 
 '''
