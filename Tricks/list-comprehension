@@ -1,0 +1,6 @@
+>>> there are 2 styles must follows
+1- the general
+[unicode(x.strip()) if x is not None else '' for x in row]
+
+2- if i have "if" and "and" or "or" operations only wihtout else
+[f(x) for x in sequence if condition and condition or condition]
