@@ -123,8 +123,8 @@ seen = []
 # 1- split and remove the duplicate lines  
 #             [will do it                              if all of the rest became true otherwise will noting will be applied]
 sorted_list = [i.split('=') for i in logs.splitlines() if i not in seen and not seen.append(i)]
-# what about the "not" here ?
-# actually come to just do sth if the previous conditions are true, for ex: if true do(and not)  this(seen.append(i))
+# what about the "not" here ?                                                   NONE  < this is the retuen value of this oepration "seen.append(i)" u can check it by : print(seen.append("test") that is why say "not")
+# actually come to just do sth true, for ex: if true do(and not)  this(seen.append(i))
 
 
 # 2- then sort them depends of key 
