@@ -4,3 +4,24 @@
 
 2- if i have "if" and "and" or "or" operations only wihtout else
 [f(x) for x in sequence if condition and condition or condition]
+
+
+########### EXAMPLE ##########
+logs = """ahmed=10
+ghanem=15
+ayman=25
+abd=20
+ghanem=15
+ayman=25"""
+seen = []
+# 1- split and remove the duplicate lines  
+#             [will do it                              if all of the rest became true otherwise will noting will be applied]
+sorted_list = [i.split('=') for i in logs.splitlines() if i not in seen and not seen.append(i)]
+# what about the "not" here ?                                                   NONE  < this is the retuen value of this oepration "seen.append(i)" u can check it by : print(seen.append("test") that is why say "not")
+# actually come to just do sth true, for ex: if true do(and not)  this(seen.append(i))
+
+
+# 2- then sort them depends of key 
+sorted_list.sort(key=lambda x: x[1], reverse=True)
+# 3- then join 
+print("\n".join(['='.join(i) for i in sorted_list ]))
