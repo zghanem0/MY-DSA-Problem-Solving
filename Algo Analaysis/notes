@@ -22,7 +22,7 @@ O((log(n))c) - polylogarithmic time
 O(n) - linear time
 O(n2) - quadratic time
 O(nc) - polynomial time : 3*n, 5*n^2, n^3, n^4, all of then under polynomial 
-O(cn) - exponential time
+O(c^n) - exponential time
 O(n!) - factorial time
 (n = size of input, c = some constant)
 
