@@ -39,6 +39,8 @@ sometimes the search space is very very large 1000000000000, so it is not logic 
 here is the dp come the dp will going to theough the element without storing them, just will solve the smaller sub-problems first and then using it during the execution of bigger problem. 
 
 
+
+
 # Dynamic Programming generally come in one of these 3 categories :
 1- minizatation
 2- maximization
@@ -48,6 +50,21 @@ here is the dp come the dp will going to theough the element without storing the
 # dp styles:
 1- subset style : pick or leave
 
+
+
+
+
+
+
+######### how to the Memoization Technique ######## 
+1- make it work: 
+  - visualie the the problem as a tree
+  - impelement the tree using recursion, usually by decreasing recursively until reach to the base case
+  - test it 
+2- make it efficient: 
+  - add a memo(key) for the previously computed results into a hashtable  that is why called memoization, ex: memo[n] = fastFib(n-1, memo) + fastFib(n-2, memo)
+  -  and add a base case to retuen memo values
+  - store the return values into the memo
 
 
 # Resources
