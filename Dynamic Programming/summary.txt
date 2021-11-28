@@ -1,6 +1,7 @@
 What is the difference between memoization and dynamic programming?
 ------------------------------ short answer -----------------------------
-Dynamic programming is technique for solving problems of recursive nature by store the previouse Computation results in a table. so Dynamic Programming is mainly an optimization of  plain recursion.  
+Dynamic programming is technique for solving problems of recursive nature by store the previouse Computation results in a table. so Dynamic Programming is mainly an optimization of  plain recursion.
+changes the search space from accessing it exponentially to be  linear 
 This problem can be solved by using 2 approaches
     1. Memoization (Top Down) - Using recursion to solve the sub-problem and storing the result in some hash table.
     2. Tabulation (Bottom Up) - Using Iterative approach to solve the problem by solving the smaller sub-problems first and then using it during the execution of bigger problem.
