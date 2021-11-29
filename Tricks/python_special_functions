@@ -3,7 +3,7 @@ Class functions that begin with double underscore __ are called special function
 
 >  __init__(): is one of them. It gets called every time we create a new object of that class.
 
-> __str__(): method in our class that controls how the object gets printed
+> __str__(): method in our class that controls how the object gets printed, __str__()  == str(p1)
 
 p1 = Point(2,3)
 print(p1)
@@ -19,3 +19,10 @@ class Point:
     
     def __str__(self):
         return "({0},{1})".format(self.x,self.y)
+
+Output
+(2, 3)
+        
+-  Turns out, that this same method is invoked when we use the built-in function str() or format().
+
+> 
