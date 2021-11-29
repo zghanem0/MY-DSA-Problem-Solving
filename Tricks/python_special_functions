@@ -5,7 +5,7 @@ or the operands that the operator acts on
 
 
 ################## function overloading #################
-Python Special Functions: http://docs.python.org/3/reference/datamodel.html#special-method-names
+Python Special Functions/methods: http://docs.python.org/3/reference/datamodel.html#special-method-names
 Class functions that begin with double underscore __ANY-WORD__ are called special functions in Python.
 
 >>>>Function overloading is further divided into two types: overloading built-in functions and overloading custom functions:
@@ -78,8 +78,29 @@ A good example is the "+" operator. This operator will perform an arithmetic ope
 ```
 
 
+Overloading the + Operator
+To overload the + operator, we will need to implement __add__() function in the class. With great power comes great responsibility. We can do whatever we like, inside this function. But it is more sensible to return a Point object of the coordinate sum.
+
+class Point:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return "({0},{1})".format(self.x, self.y)
+
+    def __add__(self, other):
+        x = self.x + other.x
+        y = self.y + other.y
+        return Point(x, y)
 
 
+p1 = Point(1, 2)
+p2 = Point(2, 3)
+print(p1+p2)
+
+Output:
+(3,5)
 
 
 
