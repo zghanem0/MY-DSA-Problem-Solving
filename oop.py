@@ -57,6 +57,30 @@ a = Dog("dog_a", 2)
 print(Dog.numbers)  # acceess class_attribute
 print(a.numbers)  # acceess class_attribute
 
+
+
+###### overriding example #######
+class Parent(Grand):
+    def fun(self):
+        print("Parent")
+        return
+
+class Child(Parent):
+    def fun(self):
+        print("Child")
+        return
+    
+class Override:
+    def main():
+        obj = Child()
+        obj.fun()
+        super(Child,obj).fun()
+        super(Parent,obj).fun()
+        return
+
+Override.main()
+
+
 '''
 # summary:
 >> attributes:
