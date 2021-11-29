@@ -1,6 +1,15 @@
-Python Special Functions: http://docs.python.org/3/reference/datamodel.html#special-method-names
-Class functions that begin with double underscore __ are called special functions in Python.
+Python supports both function overloading and operator overloading
+>>> What is Overloading?
+Overloading, in the context of programming, refers to the ability of a function or an operator to behave in different/many ways depending on the parameters that are passed to the function,
+or the operands that the operator acts on
 
+
+################## function overloading #################
+Python Special Functions: http://docs.python.org/3/reference/datamodel.html#special-method-names
+Class functions that begin with double underscore __ANY-WORD__ are called special functions in Python.
+
+>>>>Function overloading is further divided into two types: overloading built-in functions and overloading custom functions:
+>> Overloading Built-in Functions
 >  __init__(): is one of them. It gets called every time we create a new object of that class.
 
 > __str__(): method in our class that controls how the object gets printed, __str__()  == str(p1)
@@ -25,4 +34,66 @@ Output
         
 -  Turns out, that this same method is invoked when we use the built-in function str() or format().
 
-> 
+> __len__:
+    def __len__(self):
+        return len(self.basket)
+
+
+
+>> overloading custom functions:To overload a user-defined function in Python, we need to write the function logic in such a way that depending upon the parameters passed,
+a different piece of code executes inside the function. Take a look at the following example:
+
+
+class Student:
+    def hello(self, name=None):
+        if name is not None:
+            print('Hey ' + name)
+        else:
+            print('Hey ')
+
+# Creating a class instance
+std = Student()
+
+# Call the method
+std.hello()
+
+# Call the method and pass a parameter
+std.hello('Nicholas')
+Output:
+
+Hey
+Hey Nicholas
+
+
+################## operator overloading #################
+Python allows us to change the default behavior of an operator depending on the operands that we use.
+The functionality of Python operators depends on built-in classes. However, the same operator will behave differently when applied to different types.
+A good example is the "+" operator. This operator will perform an arithmetic operation when applied on two numbers, will concatenate two strings, and will merge two lists.
+```
+>>> 4 + 4
+8
+
+>>> "Py" + "thon"
+'Python'
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### Resource
+- https://stackabuse.com/overloading-functions-and-operators-in-python/
+- https://www.programiz.com/python-programming/operator-overloading
