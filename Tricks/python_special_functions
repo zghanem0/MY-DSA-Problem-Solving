@@ -1,0 +1,6 @@
+Python Special Functions: http://docs.python.org/3/reference/datamodel.html#special-method-names
+Class functions that begin with double underscore __ are called special functions in Python.
+
+>  __init__(): is one of them. It gets called every time we create a new object of that class.
+
+> __str__()
