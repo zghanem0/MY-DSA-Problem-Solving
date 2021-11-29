@@ -16,9 +16,9 @@ Abstraction:-- Implementation hiding.
 - Run-time: is the time at which the executable code is started running
 
 >>> Difference between Compile-time and Run-time Polymorphism:
-- polymorphism: The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form
-- Compile Time Polymorphism == Static binding == Early binding == overloading as well.
-- Run time Polymorphism     == Dynamic binding == Late binding == overriding
+polymorphism: The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form
+> Compile Time Polymorphism == Static binding == Early binding == overloading technique as well.
+> Run time Polymorphism     == Dynamic binding == Late binding == overriding technique 
 
 >> there are to 2 types of attributtes:
   - class attribute (shared) : which is used inside the class and every object as well
