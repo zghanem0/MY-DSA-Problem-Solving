@@ -12,8 +12,8 @@ Encapsulation:-- Information hiding.
 Abstraction:-- Implementation hiding.
 
 >>> diff between Compile time and runtime?
-- Compile time refers to the time duration in which the programming code is (compiled) or converted to the machine code
-- Run-time: the time period in which a user is running your piece of software. and start after the code has compiled
+- Compile time : is the time at which the source code is converted (combiled) into an executable code (machine code) (combiled)
+- Run-time: is the time at which the executable code is started running
 
 >>> Difference between Compile-time and Run-time Polymorphism:
 - polymorphism: The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form
