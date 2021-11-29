@@ -1,0 +1,10 @@
+>>> Immutable Objects : These are of in-built types like int, float, bool, string, unicode, tuple
+
+# Python code to test that
+# tuples are immutable
+	
+tuple1 = (0, 1, 2, 3)
+tuple1[0] = 4
+print(tuple1)
+
+>>> Mutable Objects : These are of type list, dict, set . Custom classes are generally mutable.
