@@ -3,8 +3,8 @@
 # A node structure 
 class Node: 
     # A utility function to create a new node 
-    def __init__(self ,key): 
-        self.data = key 
+    def __init__(self ,data): 
+        self.data = data 
         self.left = None
         self.right = None
   
