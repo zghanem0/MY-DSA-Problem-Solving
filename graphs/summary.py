@@ -132,9 +132,9 @@
 
 
 >>> tree has many definitions :
-Any connected acyclic graph is a tree. There are several different equivalent definitions of trees:
+Trees are DAGs with the restriction that a child can only have one parent. There are several different equivalent definitions of trees:
 
-They're connected acyclic graphs.
+Trees are DAGs with the restriction that a child can only have one parent..
 They're connected graphs with one more node than edge.
 They're minimally-connected graphs (they're connected, but removing any edge disconnects them)
 They're maximally acyclic graphs (they're acyclic, and adding any missing edge creates a cycle)
