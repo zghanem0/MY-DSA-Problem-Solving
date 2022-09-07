@@ -1,0 +1,1 @@
+nupkg_version=ast.literal_eval(nupkg_details['value'][0]['Body'])['Version']
