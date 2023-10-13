@@ -1,0 +1,21 @@
+def minimumAbsoluteDifference(arr):
+    # Write your code here
+    arr.sort()
+    minimum = float("inf")
+    for i in range(len(arr) - 1):
+        minimum = min(abs(arr[i+1]-arr[i]), minimum)
+
+    return minimum
+    #-------- or -------#
+    n = len(nums)
+    minDiff = math.inf
+    ans = []
+    for i in range(n):
+        for j in range(i):
+            curDiff = abs(nums[i] - nums[j])
+            if curDiff < minDiff:
+                minDiff = curDiff
+                ans = [[min(nums[i], nums[j]), max(nums[i], nums[j])]]
+            elif curDiff == minDiff:
+                ans.append([min(nums[i], nums[j]), max(nums[i], nums[j])])
+    return sorted(ans)

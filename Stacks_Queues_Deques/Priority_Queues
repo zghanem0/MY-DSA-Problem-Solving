@@ -1,5 +1,9 @@
 # https://afteracademy.com/blog/priority-queues
 >>> Priority Queues are the extension of the queues with the following properties:
+- built in the top of binary heap , as u know heap queue either to be a min or max heap
+    - Python provides a built-in implementation of the priority queue data structure.
+    - Since the queue.PriorityQueue class needs to maintain the order of its elements, a sorting mechanism is required every time a new element is enqueued.
+Python solves this by using a binary heap to implement the priority queue.
 - Each element inserted in the Priority Queue has some priority.
 - The element which has higher priority is dequeued first than the element having the low priority.
 - If the two elements having the same priority, then the element which entered the priority queue first will get dequeued first.
@@ -11,3 +15,21 @@ Enqueue() - Inserting the new element in the Priority Queue.
 Dequeue() - Deleting the maximum priority element from the Priority Queue.
 top() - Returning the maximum priority element in the Priority Queue.
 
+
+
+
+```
+from queue import PriorityQueue
+
+q = PriorityQueue()
+
+q.put((4, 'Read'))
+q.put((2, 'Play'))
+q.put((5, 'Write'))
+q.put((1, 'Code'))
+q.put((3, 'Study'))
+
+while not q.empty():
+    current_item = q.get()  # when u get irem from the priority queue it will gonna automatically removed from the queue 
+    print(f"item: {current_item},queue: {q.queue}")
+```

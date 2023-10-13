@@ -1,0 +1,26 @@
+https://towardsdatascience.com/you-should-never-repeat-computing-in-python-b097d57cf661
+
+You Should Never Repeat Computing In Python
+Built-in function tools in Python help us to cache
+ Python built-in decorator called lru_cache that can enable caching mechanisms out-of-the-box. It will be super effective in many scenarios such as Dynamic Programming and Web Development.
+ Then, it comes to the concept of LRU. It stands for “Least Recently Used”. The LRU cache works best when the most recent calls are the best predictors of upcoming calls. For example, although I have written almost 100 articles on Towards Data Science, the top 10 of them contributed almost 80% of the total reads. If I will write a website to host these articles, it would be a good idea to cache these top 10 articles so that most readers will be able to load them with the best performance.
+
+
+>>> When we should not use the LRU cache?
+- the computing process is not expected to be repeated. However, this is one case that we should not use the LRU cache. It doesn’t make sense to cache functions with side-effects, functions that need to create distinct mutable objects on each call, or impure functions such as time() or random().
+
+
+=========== Example ==================
+from functools import lru_cache
+
+
+computing_times = 0
+@lru_cache()
+def fib(n):
+    global computing_times
+    computing_times += 1
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+
+print(fib(10),computing_times)
