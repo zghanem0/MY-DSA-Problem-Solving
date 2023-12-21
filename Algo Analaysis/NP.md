@@ -1,10 +1,10 @@
-NP (NonPolynomial) (nondeterministic polynomial) :
+# NP (NonPolynomial) (nondeterministic polynomial) :
 is a complexity class such as time complexity and space complexity but NP used to classify decision problems
 is the amount of time it would take for a computer to solve the problem if the computer had unlimited resources
 
 
 
-> Deterministic and Non-deterministic Algorithms
+### Deterministic and Non-deterministic Algorithms
 - deterministic algorithm: for a given particular input, the computer will always produce the same output going through the same states
 - non-deterministic algorithm, for the same input, the compiler may produce different output in different runs. In fact, non-deterministic algorithms can’t solve the problem in polynomial time and can’t determine what is the next step.
 - The non-deterministic algorithms can show different behaviors for the same input on different execution and there is a degree of randomness to it.
@@ -14,13 +14,13 @@ NP is the set of decision problems verifiable in polynomial time by a determinis
 
 
 
-> problem's solution:
-- varified
+### problem's solution:
+- verified
 - then solved
 
-> P (Polynomial) vs NP (NonPolynomial) 
-P: A yes-or-no problem is in P (Polynomial time) if the answer can be computed in polynomial time.
-NP: A yes-or-no problem is in NP (Non-deterministic Polynomial time) if a yes answer can be verified in polynomial time.
+### P (Polynomial) vs NP (NonPolynomial) 
+- P: A yes-or-no problem is in P (Polynomial time) if the answer can be computed in polynomial time.
+- NP: A yes-or-no problem is in NP (Non-deterministic Polynomial time) if a yes answer can be verified in polynomial time.
 Intuitively, we can see that if a problem is in P, then it is in NP. Given a potential answer for a problem in P, we can verify the answer by simply recalculating the answer.
 
 Less obvious, and much more difficult to answer, is whether all problems in NP are in P. Does the fact that we can verify an answer in polynomial time mean that we can compute that answer in polynomial time?
