@@ -49,6 +49,12 @@ This is an example of HEURISTIC approach to optimization
 ### what is Heuristic
 • A heuristic is a rule of thumb, which means it is an imperfect criteria to base a decision on.
 
+Inspiration often from: 
+
+• human problem solving, rules of thumb, common sense rules • design of techniques based on problem-solving experience
+
+• natural processes
+
 
 Aso, Method which, although unable to determine a perfectly accurate solution, should produce a set of good quality approximations to exact solutions.
 
