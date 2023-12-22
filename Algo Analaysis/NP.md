@@ -34,9 +34,15 @@ Most scientists believe that P!=NP. However, no proof has yet been established f
 
 ## How to solve Combinatorial Optimisation Problems?
 There are Many possible approaches:
+
 • Systematic enumeration (brute force) is probably not realistic, at least for interesting problems
-• Some approaches may eliminate certain assignments through careful reasoning (as you will see in a later semester in the module Decision Analytics)
-• Other intuitive approach: start with some good guess and then try to improve it iteratively
+
+• Some approaches may eliminate certain assignments through careful reasoning (as you will see in a later semester in the module Decision Analytics), for example
+-  Problem specific, dedicated algorithms 
+- Generic methods for exact optimization
+
+• Heuristic methods: start with some good guess based essentially on experts’ knowledge and experience and then try to improve it iteratively.
+
 This is an example of HEURISTIC approach to optimization
 
 
