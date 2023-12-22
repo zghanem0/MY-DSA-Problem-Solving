@@ -4,7 +4,7 @@
 >>> OOP Compound from 4 terms:
 - encapsulation (hide code): is a way to encapsulate or hide your attributes and methods from accessing from the out side for  security puposes and instead using stters and getters to set and get values
 - abstraction (hide impelementations): shows only useful data by providing the most necessary details, example, expose x,y so u will not have to know about what will gonna happen and the implementations
-- Polymorphism(poly + morphism): i can do single action (do sth) in a different ways, so we can implement it either by overriding the method (overriding) or creating multiple form of the method(overloading)
+- Polymorphism(poly + morphism): I can do single action (do sth) in a different ways, so we can implement it either by overriding the method (overriding) or creating multiple form of the method(overloading)
   - overloading : allows the object to decide which form of the function to implement at compile-time (overloading) as well as run-time (overriding).
   - overriding: the class is the same but i just need a change for a little methods
 - Inheritance: is the procedure in which one class inherits the attributes and methods of another class.
@@ -17,12 +17,22 @@ Abstraction:-- Implementation hiding.
 
 >>> Difference between Compile-time and Run-time Polymorphism:
 polymorphism: The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form
-> Compile Time Polymorphism == Static binding == Early binding == overloading technique as well.
-> Run time Polymorphism     == Dynamic binding == Late binding == overriding technique 
+> CompileTime Polymorphism == Static binding == Early binding == overloading technique as well.
+> RunTime Polymorphism     == Dynamic binding == Late binding == overriding technique 
 
 >> there are to 2 types of attributtes:
-  - class attribute (shared) : which is used inside the class and every object as well
-  - instance attribute (instance-specific): so differs from instance orjects to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
+  - class attribute (shared) : class lvl attribute in which  used inside the class and every object as well can access it as well
+  - instance attribute (instance-specific): so differs from instance orject/instance to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
+
+
+> what is diff between @classmethod and @staticmethod and instance method:
+- classmethod is used when you want this method to have access to the class lvl methods and attributes
+- instancemethod is used when you want this method to be at instance lvl and not effect the global class
+- static method is used when you are using a method that desn't need to access either instance or class, it is something static doing something static, for example helloworld method. to do staic func
+
+>> what is the difference between the cls and self.
+- if you are planning to make a classmethod.
+- if you are planning to make an instance method
 
 '''
 
@@ -42,10 +52,10 @@ class Dog:
     @classmethod
     def diff_init_for_this_class(cls, name, age):
         return cls(name, age)
-    @staticmethod
-    def static_method_to_calc_the_health_of_dog(age,health):
-        return ((age.age/10)*100 + health)/100
 
+    @staticmethod
+    def static_method_to_calc_the_health_of_dog(age, health):
+        return ((age.age/10)*100 + health)/100
 
 
 a = Dog("dog_a", 2)
@@ -53,10 +63,9 @@ a = Dog("dog_a", 2)
 # print(a.name)  # access instance attribute, u can't access it from the outside because it is private and will create
 # new attribute called name and the __name will be the same and can not see it, so the name will not be the __name
 
-# u can access it by the instance or the class 
+# u can access it by the instance or the class
 print(Dog.numbers)  # acceess class_attribute
 print(a.numbers)  # acceess class_attribute
-
 
 
 ###### overriding example #######
@@ -65,18 +74,21 @@ class Parent(Grand):
         print("Parent")
         return
 
+
 class Child(Parent):
     def fun(self):
         print("Child")
         return
-    
+
+
 class Override:
     def main():
         obj = Child()
         obj.fun()
-        super(Child,obj).fun()
-        super(Parent,obj).fun()
+        super(Child, obj).fun()
+        super(Parent, obj).fun()
         return
+
 
 Override.main()
 
