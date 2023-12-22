@@ -32,3 +32,9 @@ Most scientists believe that P!=NP. However, no proof has yet been established f
 > There are often general hierarchies of complexity classes; for example, it is known that a number of fundamental time and space complexity classes relate to each other in the following way:
 [**L**](https://en.wikipedia.org/wiki/L_(complexity) "L (complexity)")⊆**[NL](https://en.wikipedia.org/wiki/NL_(complexity) "NL (complexity)")**⊆**[P](https://en.wikipedia.org/wiki/P_(complexity) "P (complexity)")**⊆**[NP](https://en.wikipedia.org/wiki/NP_(complexity) "NP (complexity)")**⊆**[PSPACE](https://en.wikipedia.org/wiki/PSPACE "PSPACE")**⊆**[EXPTIME](https://en.wikipedia.org/wiki/EXPTIME "EXPTIME")**⊆**[NEXPTIME](https://en.wikipedia.org/wiki/NEXPTIME "NEXPTIME")**⊆**[EXPSPACE](https://en.wikipedia.org/wiki/EXPSPACE "EXPSPACE")**
 
+## How to solve Combinatorial Optimisation Problems?
+There are Many possible approaches:
+• Systematic enumeration (brute force) is probably not realistic, at least for interesting problems
+• Some approaches may eliminate certain assignments through careful reasoning (as you will see in a later semester in the module Decision Analytics)
+• Other intuitive approach: start with some good guess and then try to improve it iteratively
+This is an example of HEURISTIC approach to optimization
