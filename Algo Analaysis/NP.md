@@ -38,3 +38,10 @@ There are Many possible approaches:
 • Some approaches may eliminate certain assignments through careful reasoning (as you will see in a later semester in the module Decision Analytics)
 • Other intuitive approach: start with some good guess and then try to improve it iteratively
 This is an example of HEURISTIC approach to optimization
+
+
+### what is Heuristic
+• A heuristic is a rule of thumb, which means it is an imperfect criteria to base a decision on.
+
+Aso, Method which, although unable to determine a perfectly accurate solution, should produce a set of good quality approximations to exact solutions.
+• Heuristics were initially based essentially on experts’ knowledge and experience and aimed to explore the search space in a particularly convenient way
