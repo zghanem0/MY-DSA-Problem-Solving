@@ -1,8 +1,8 @@
-How to create a script that accept and argument
+# How to create a script that accept an argument
 
-########### script ##########
+## Script 
 
-
+```
 def open_document(file_name):
     document = os.path.normpath(os.path.join(DOCUMENT_DIR, file_name))
     with open(document) as fp:
@@ -19,14 +19,10 @@ if __name__ == '__main__':
                         default = None)
     args = parser.parse_args()
     process(args.document_name[0])
+```
 
-
-
-
-
-
-######### command ##########
-
+## Command 
+```
 script.py --file $(FILE_NAME) > ./Output/$(FILE_NAME)
-
+```
 
