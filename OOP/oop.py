@@ -42,6 +42,7 @@ class Student:
 > what is the diff between @classmethod and @staticmethod?
 both are class scoped but:
 - staticmethod: cannot access the class attribute which means (It can’t access or modify class state) <<< that is why it cannot have self or cls parameter.
+  usually used to shape something, shape url, arn, ...
 - classmethod: can access or modify class state by using cls parameter.
 
 >> what is the difference between the cls and self.
