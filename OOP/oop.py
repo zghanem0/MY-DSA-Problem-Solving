@@ -21,8 +21,8 @@ polymorphism: The word polymorphism means having many forms. In simple words, we
 > RunTime Polymorphism     == Dynamic binding == Late binding == overriding technique 
 
 >> there are to 2 types of attributtes:
-  - class attribute (shared) : class lvl attribute in which  used inside the class and every object as well can access it as well
-  - instance attribute (instance-specific): so differs from instance orject/instance to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
+  - class attribute(cls) (shared) : class lvl attribute in which  used inside the class and every object as well can access it as well
+  - instance attribute(self) (instance-specific): so differs from instance orject/instance to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
 
 class Student:
     name = 'unknown' # class attribute
