@@ -24,11 +24,25 @@ polymorphism: The word polymorphism means having many forms. In simple words, we
   - class attribute (shared) : class lvl attribute in which  used inside the class and every object as well can access it as well
   - instance attribute (instance-specific): so differs from instance orject/instance to another, every new created object of instance of a class will gonna use it and the it as an instance specific, in conterary of the class attribute will be shared with all instances
 
+class Student:
+    name = 'unknown' # class attribute
+    
+    def __init__(self):
+        self.age = 20  # instance attribute
+
+    @staticmethod
+    def tostring():
+        print('Student Class')
 
 > what is diff between @classmethod and @staticmethod and instance method:
 - classmethod is used when you want this method to have access to the class lvl methods and attributes
 - instancemethod is used when you want this method to be at instance lvl and not effect the global class
 - static method is used when you are using a method that desn't need to access either instance or class, it is something static doing something static, for example helloworld method. to do staic func
+
+> what is the diff between @classmethod and @staticmethod?
+both are class scoped but:
+- staticmethod: cannot access the class attribute which means (It can’t access or modify class state) <<< that is why it cannot have self or cls parameter.
+- classmethod: can access or modify class state by using cls parameter.
 
 >> what is the difference between the cls and self.
 - if you are planning to make a classmethod.
