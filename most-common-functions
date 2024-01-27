@@ -31,3 +31,7 @@ print(list(result))
 
 ####################### Lambda Function ###########################
 >> Syntax : lambda p1, p2: expression 
+
+
+################## lmabda function vs static function #################
+use lambda incase of I will not going to reuse it
