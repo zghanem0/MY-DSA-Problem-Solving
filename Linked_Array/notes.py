@@ -13,11 +13,5 @@ The elements in a linked list are linked using pointers
     to access an element in array u need to take n(k) time to go from the head of the list to the kth element.
     in contrast in array u have constant time operation to access an element in an array
 
->> diference between raise,try,assert :
-raise - raise an exception.
-
-assert - raise an exception if a given condition is (or isn't) true.
-
-try - execute some code that might raise an exception, and if so, catch it.
 
 '''
